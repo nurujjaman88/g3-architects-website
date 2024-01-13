@@ -18,6 +18,8 @@
     text-align: center;
     padding: 21px 24px;
     margin-bottom: 20px;
+    cursor: pointer;
+    border: 0px;
 }
 /* header styles */
 
@@ -75,6 +77,35 @@ nav li a{
     color: #727272;
 }
 
-.banner-img img{
-    margin: 580px 240px 45px 240px;
+.banner img{
+    width: 100%;
+}
+
+/* media queries */
+
+/* Mobile devices */
+
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+    nav > ul{
+        flex-direction: column;
+    }
+}
+
+/* Tablet devices */
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    nav{
+        flex-direction: column;
+    }
+
+    header{
+        padding: 50px;
+    }
 }
